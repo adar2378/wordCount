@@ -1,0 +1,11 @@
+<h1>Count</h1>
+<h3>There are {{count}} words in your text</h3>
+<h3>Your Text:</h3>
+{{fulltext}}
+<br />
+<h3>Each words with their frequency</h3>
+
+{% for word, count in worddict %}
+{{word}} = {{count}}
+<br />
+{% endfor %}
